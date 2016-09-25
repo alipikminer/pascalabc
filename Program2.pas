@@ -78,15 +78,15 @@ end;
   begin
     for ii := 1 to 700 do
     begin
-      if map[i][ii] = 0 then c := clBlue;
-      if map[i][ii]=1 then c:= clBlue ;
-      if map[i][ii]=2 then c:=clChocolate;
-      if map[i][ii]=3 then c:=clForestGreen;
-      if map[i][ii]=4 then c:=clGreen;
-      if map[i][ii]=5 then c:=clGreen;
-      if map[i][ii]=6 then c:=clGray;
-      if map[i][ii]=7 then c:=clOlive;
-      if map[i][ii]=8 then c:=clBlack;
+      if map[i][ii] = 0 then c := clBlue;//вода
+      if map[i][ii]=1 then c:= clBlue ;//вода
+      if map[i][ii]=2 then c:=clChocolate;//шоколданый биом
+      if map[i][ii]=3 then c:=clForestGreen;// Тёмный лес
+      if map[i][ii]=4 then c:=clGreen;//трава
+      if map[i][ii]=5 then c:=clGreen;//трава
+      if map[i][ii]=6 then c:=clGray;//горы
+      if map[i][ii]=7 then c:=clOlive;//саванна
+      if map[i][ii]=8 then c:=clBlack;// точки
       setpixel(i, ii, c);
     end;
     
